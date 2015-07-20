@@ -31,9 +31,15 @@ public class Sangsok_02 {
 		System.out.println(t1 == t3); // 주소를 비교 하는 것
 		System.out.println(t1.equals(t3)); // 정의된 형식으로 비교하는 것
 		
-		String name  = "빌게이츠";
-		if(name == "빌게이츠"){
-			System.out.println("너잘났다. ~~~");
-		}
+		String name1  = "빌게이츠";
+		System.out.println(name1 == "빌게이츠"); // 주소 판별
+		System.out.println(name1.equals("빌게이츠")); // 값이 같은지를 판별
+		
+		System.out.println("=====================");
+		
+		String name2  = new String( "빌게이츠");
+		System.out.println(name2 == "빌게이츠"); // 주소 판별
+		System.out.println(name2.equals("빌게이츠")); // 값이 같은지를 판별
+		
 	}
 }
